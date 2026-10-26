@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14251e">
+<title>Тайны Средиземья — перепутанные судьбы</title>
+<style>
+:root{--bg:#101a16;--panel:#192821;--panel2:#21362b;--gold:#d8b66c;--cream:#f1e8d0;--muted:#b8c3b4;--green:#769b72;--red:#d17b6e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#314b38 0,transparent 55%),var(--bg);color:var(--cream);font:16px/1.55 Georgia,'Times New Roman',serif}
+header{text-align:center;padding:48px 18px 28px;border-bottom:1px solid #78623b;background:linear-gradient(#101a1688,#101a16)}.eyebrow{letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font:12px/1.5 system-ui,sans-serif}
+h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.1;margin:12px 0;color:#f4dfaa;font-weight:normal;text-shadow:0 2px 22px #000}header p{max-width:690px;margin:14px auto 0;color:var(--muted)}
+main{max-width:1180px;margin:auto;padding:24px 16px 70px}.intro,.panel{background:linear-gradient(145deg,#1d3026,#17251e);border:1px solid #53664d;border-radius:14px;padding:20px;margin:0 0 20px;box-shadow:0 12px 30px #0002}.intro strong{color:var(--gold)}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.pill{border:1px solid #65785b;border-radius:99px;padding:5px 10px;color:#e2d5b3;font:12px system-ui,sans-serif}
+h2{font-weight:normal;color:var(--gold);font-size:1.55rem;margin:0 0 12px}h3{font-size:1.05rem;color:#e8d7a9;font-weight:normal;margin:18px 0 8px}
+.clues{columns:2;column-gap:34px;padding-left:25px;margin:0}.clues li{break-inside:avoid;padding:0 0 9px 4px;color:#e0e3d7}.clues li::marker{color:var(--gold)}
+.table-wrap{overflow-x:auto;border-radius:10px;border:1px solid #53664d}table{border-collapse:collapse;width:100%;min-width:750px;background:#14221b}th,td{padding:10px 9px;border-bottom:1px solid #34483a;text-align:left}th{background:#293e30;color:#e5ce91;font-weight:normal}td:first-child{color:#f1dca5;font-size:1.04rem}select{width:100%;min-width:118px;background:#0f1a14;color:var(--cream);border:1px solid #566b56;border-radius:7px;padding:9px 7px;font:14px system-ui,sans-serif}select:focus,button:focus{outline:2px solid var(--gold);outline-offset:2px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}button{border:1px solid var(--gold);border-radius:8px;background:var(--gold);color:#18251b;padding:11px 16px;font-weight:700;cursor:pointer;font:600 14px system-ui,sans-serif}button.secondary{background:transparent;color:var(--cream);border-color:#6d8069}button:hover{filter:brightness(1.08)}#result{margin-top:14px;padding:13px;border-radius:8px;display:none}#result.good{display:block;background:#243d2a;border:1px solid #71966b;color:#d8f0ce}#result.bad{display:block;background:#402722;border:1px solid #a55f53;color:#f4c5ba}#result.neutral{display:block;background:#25362c;border:1px solid #617a60;color:#e4e5cf}.hint{color:var(--muted);font-size:.95rem}.solution{display:none;margin-top:12px;padding:14px;border-left:3px solid var(--gold);background:#111e17}.solution.visible{display:block}.solution table{min-width:0}.solution td,.solution th{padding:7px}.foot{text-align:center;color:#829080;font:12px system-ui,sans-serif;padding:20px}
+@media(max-width:650px){header{padding-top:32px}.clues{columns:1}.intro,.panel{padding:15px}main{padding-left:10px;padding-right:10px}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">Загадка Средиземья · логическая головоломка</div><h1>Перепутанные судьбы</h1><p>Пять путников. Пять предметов. Пять любимых угощений и пять мест назначения. Всё оказалось не на своих местах — помоги восстановить порядок.</p></header>
+<main>
+<section class="intro"><strong>Твоя задача:</strong> сопоставить каждому герою оружие, снаряжение, любимое угощение и пункт назначения. Внимательно читай подсказки: даже у самых известных героев судьба сегодня пошла по другому маршруту.
+<div class="stats"><span class="pill">5 героев</span><span class="pill">20 подсказок</span><span class="pill">Без знания канона</span></div></section>
+<section class="panel"><h2>Свиток подсказок</h2><ol class="clues">
+<li>Фродо вооружился топором.</li><li>Сэм направляется в Морию.</li><li>Арагорн больше всего любит эльфийский хлеб.</li><li>Кольцо Всевластия оказалось у Леголаса.</li><li>Гимли предпочитает яблочный пирог.</li><li>Тот, у кого топор, несёт фонарь.</li><li>Тот, у кого карта Средиземья, вооружён луком.</li><li>Владелец эльфийской верёвки взял копьё.</li><li>Носитель Кольца выбрал кинжал.</li><li>Любитель пива несёт фонарь.</li><li>Владелец карты любит сыр.</li><li>Любитель эльфийского хлеба взял эльфийскую верёвку.</li><li>Любитель грибов носит Кольцо Всевластия.</li><li>Любитель пива отправляется в Рохан.</li><li>Любитель сыра направляется в Морию.</li><li>Любитель эльфийского хлеба идёт в Лотлориэн.</li><li>Любитель грибов направляется в Гондор.</li><li>Владелец меча не несёт ни карту, ни фонарь.</li><li>Тот, у кого эльфийский плащ, не идёт ни в Рохан, ни в Морию.</li><li>Путник в Ривенделл не вооружён ни луком, ни кинжалом.</li>
+</ol></section>
+<section class="panel"><h2>Таблица расследования</h2><p class="hint">Выбери для каждого героя по одному значению в каждой категории. Можно менять ответы сколько угодно раз. Пустые поля не мешают проверке.</p>
+<div class="table-wrap"><table id="puzzle"><thead><tr><th>Герой</th><th>Оружие</th><th>Снаряжение</th><th>Угощение</th><th>Направление</th></tr></thead><tbody></tbody></table></div>
+<div class="actions"><button id="check">Проверить решение</button><button class="secondary" id="clear">Очистить таблицу</button><button class="secondary" id="hintBtn">Открыть подсказку</button></div><div id="result" role="status" aria-live="polite"></div><div class="solution" id="solution"><strong>Небольшой намёк:</strong> начни с связок, где подсказки прямо связывают предмет, угощение и направление. Например, эльфийский хлеб ведёт сразу к двум другим ответам.</div>
+</section>
+<section class="panel"><h2>Правила</h2><p>У каждого героя ровно одно оружие, один предмет снаряжения, одно любимое угощение и одно направление. Каждое значение используется ровно один раз в своей категории. Все выводы можно сделать из подсказок — знание книг и фильмов не требуется.</p><p class="hint">Совет: если застрял, сначала найди прямые связи между несколькими категориями, а затем исключай невозможные варианты. Мудрость Средиземья, как обычно, требует терпения.</p></section>
+</main><div class="foot">Сделано для дружеского интеллектуального приключения · Неофициальный фанатский проект</div>
+<script>
+const heroes=['Фродо','Сэм','Арагорн','Леголас','Гимли'];
+const cats=[
+ {key:'weapon',label:'Оружие',values:['Меч','Лук','Топор','Кинжал','Копьё']},
+ {key:'gear',label:'Снаряжение',values:['Кольцо Всевластия','Эльфийский плащ','Карта Средиземья','Эльфийская верёвка','Фонарь']},
+ {key:'food',label:'Угощение',values:['Эльфийский хлеб','Пиво','Грибы','Сыр','Яблочный пирог']},
+ {key:'place',label:'Направление',values:['Ривенделл','Мория','Рохан','Гондор','Лотлориэн']}
+];
+const solution={Фродо:{weapon:'Топор',gear:'Фонарь',food:'Пиво',place:'Рохан'},Сэм:{weapon:'Лук',gear:'Карта Средиземья',food:'Сыр',place:'Мория'},Арагорн:{weapon:'Копьё',gear:'Эльфийская верёвка',food:'Эльфийский хлеб',place:'Лотлориэн'},Леголас:{weapon:'Кинжал',gear:'Кольцо Всевластия',food:'Грибы',place:'Гондор'},Гимли:{weapon:'Меч',gear:'Эльфийский плащ',food:'Яблочный пирог',place:'Ривенделл'}};
+const tbody=document.querySelector('#puzzle tbody');
+heroes.forEach(hero=>{const tr=document.createElement('tr');const name=document.createElement('td');name.textContent=hero;tr.appendChild(name);cats.forEach(cat=>{const td=document.createElement('td'),sel=document.createElement('select');sel.setAttribute('aria-label',hero+' — '+cat.label);sel.dataset.hero=hero;sel.dataset.cat=cat.key;const empty=document.createElement('option');empty.value='';empty.textContent='— выбрать —';sel.appendChild(empty);cat.values.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o)});td.appendChild(sel);tr.appendChild(td)});tbody.appendChild(tr)});
+const result=document.querySelector('#result');
+document.querySelector('#check').addEventListener('click',()=>{
+ const selects=[...document.querySelectorAll('select[data-cat]')];let blanks=0,errors=[],correct=0;
+ cats.forEach(cat=>{const used=selects.filter(s=>s.dataset.cat===cat.key&&s.value);const seen=new Set();used.forEach(s=>{if(seen.has(s.value)){errors.push('Значение «'+s.value+'» выбрано более одного раза в категории «'+cat.label+'».')}seen.add(s.value)});});
+ heroes.forEach(hero=>cats.forEach(cat=>{const s=selects.find(x=>x.dataset.hero===hero&&x.dataset.cat===cat.key);if(!s.value){blanks++;return}if(s.value===solution[hero][cat.key])correct++}));
+ result.className='';result.style.display='block';
+ if(blanks){result.classList.add('neutral');result.textContent='Заполнено правильно: '+correct+' из 20 полей. Осталось заполнить '+blanks+'.';}
+ else if(errors.length){result.classList.add('bad');result.textContent='Есть повторяющиеся значения: '+[...new Set(errors)].join(' ');}
+ else if(correct===20){result.classList.add('good');result.textContent='Блестяще! Все 20 соответствий верны. Даже Гэндальф не нашёл бы к чему придраться.';}
+ else {result.classList.add('neutral');result.textContent='Пока верно '+correct+' из 20 соответствий. Проверь подсказки и попробуй ещё раз.';}
+});
+document.querySelector('#clear').addEventListener('click',()=>{document.querySelectorAll('select[data-cat]').forEach(s=>s.value='');result.style.display='none';result.className='';});
+document.querySelector('#hintBtn').addEventListener('click',()=>document.querySelector('#solution').classList.toggle('visible'));
+</script></body></html>
